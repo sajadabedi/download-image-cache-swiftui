@@ -14,7 +14,7 @@ struct ContentView: View {
                 List{
                     ForEach(viewModel.data) { model in
                         DownloadingImagesRow(model: model)
-                    }
+                    } 
                 }
                 .navigationTitle("Placeholder")
             }
