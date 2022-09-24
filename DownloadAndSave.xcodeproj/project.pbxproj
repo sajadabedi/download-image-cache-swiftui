@@ -14,6 +14,9 @@
 		641DC36728DEF022008D498A /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641DC36628DEF022008D498A /* PhotoModel.swift */; };
 		641DC36928DEF099008D498A /* DownloadingImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641DC36828DEF099008D498A /* DownloadingImagesViewModel.swift */; };
 		641DC36B28DEF162008D498A /* PhotoModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641DC36A28DEF162008D498A /* PhotoModelDataService.swift */; };
+		641DC36D28DEF6AD008D498A /* DownloadingImagesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641DC36C28DEF6AD008D498A /* DownloadingImagesRow.swift */; };
+		641DC36F28DEF726008D498A /* DownloadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641DC36E28DEF726008D498A /* DownloadingImageView.swift */; };
+		641DC37428DEF805008D498A /* ImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641DC37328DEF805008D498A /* ImageLoadingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		641DC36628DEF022008D498A /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		641DC36828DEF099008D498A /* DownloadingImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesViewModel.swift; sourceTree = "<group>"; };
 		641DC36A28DEF162008D498A /* PhotoModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelDataService.swift; sourceTree = "<group>"; };
+		641DC36C28DEF6AD008D498A /* DownloadingImagesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesRow.swift; sourceTree = "<group>"; };
+		641DC36E28DEF726008D498A /* DownloadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImageView.swift; sourceTree = "<group>"; };
+		641DC37328DEF805008D498A /* ImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +63,11 @@
 		641DC35728DEEF07008D498A /* DownloadAndSave */ = {
 			isa = PBXGroup;
 			children = (
+				641DC37228DEF7CA008D498A /* Utilities */,
+				641DC37128DEF7A6008D498A /* ViewModel */,
+				641DC37028DEF79F008D498A /* View */,
 				641DC35828DEEF07008D498A /* DownloadAndSaveApp.swift */,
 				641DC35A28DEEF07008D498A /* ContentView.swift */,
-				641DC36828DEF099008D498A /* DownloadingImagesViewModel.swift */,
-				641DC36A28DEF162008D498A /* PhotoModelDataService.swift */,
 				641DC36628DEF022008D498A /* PhotoModel.swift */,
 				641DC35C28DEEF08008D498A /* Assets.xcassets */,
 				641DC35E28DEEF08008D498A /* Preview Content */,
@@ -74,6 +81,32 @@
 				641DC35F28DEEF08008D498A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		641DC37028DEF79F008D498A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				641DC36C28DEF6AD008D498A /* DownloadingImagesRow.swift */,
+				641DC36E28DEF726008D498A /* DownloadingImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		641DC37128DEF7A6008D498A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				641DC36828DEF099008D498A /* DownloadingImagesViewModel.swift */,
+				641DC37328DEF805008D498A /* ImageLoadingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		641DC37228DEF7CA008D498A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				641DC36A28DEF162008D498A /* PhotoModelDataService.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,10 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				641DC36728DEF022008D498A /* PhotoModel.swift in Sources */,
+				641DC36F28DEF726008D498A /* DownloadingImageView.swift in Sources */,
 				641DC36B28DEF162008D498A /* PhotoModelDataService.swift in Sources */,
+				641DC37428DEF805008D498A /* ImageLoadingViewModel.swift in Sources */,
 				641DC35B28DEEF07008D498A /* ContentView.swift in Sources */,
 				641DC36928DEF099008D498A /* DownloadingImagesViewModel.swift in Sources */,
 				641DC35928DEEF07008D498A /* DownloadAndSaveApp.swift in Sources */,
+				641DC36D28DEF6AD008D498A /* DownloadingImagesRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,9 @@ struct ContentView: View {
             NavigationStack {
                 List{
                     ForEach(viewModel.data) { model in
-                        Text(model.title)
+                        
+                        
+                        
                     }
                 }
                 .navigationTitle("Placeholder")
