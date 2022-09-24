@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+    @StateObject var viewModel = DownloadingImagesViewModel()
+        var body: some View {
+            NavigationStack {
+                List{
+                    ForEach(viewModel.data) { model in
+                        Text(model.title)
+                    }
+                }
+                .navigationTitle("Placeholder")
+            }
     }
 }
 
